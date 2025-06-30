@@ -373,16 +373,19 @@
             height: 390px;
             margin: 0 auto;
             position: relative;
+            display: flex;
+            overflow: hidden;;
         }
 
         .blob-photo {
-            width: 30%;
-            height: 30%;
+            width: 1000%;
+            height: 100%;
             object-fit: cover;
             border-radius: 20% 60% 60% 20% / 20% 20% 60% 60%;
             transition: all 2s ease-in-out;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
             animation: blob-morph 8s ease-in-out infinite;
+            display:block;
         }
 
         @keyframes blob-morph {
