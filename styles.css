@@ -369,7 +369,8 @@
 
         /* Method 5: Morphing Blob */
         .blob-container {
-            width: 220px;
+            width: 350px;
+            max-width: 100%;
             height: 390px;
             margin: 0 auto;
             position: relative;
