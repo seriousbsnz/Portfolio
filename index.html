@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom West - Cybersecurity Professional</title>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
+
     <div class="bg-animation"></div>
-    
     <header>
         <nav>
             <div class="logo">CyberSecurity Expert</div>
@@ -21,8 +20,21 @@
             </ul>
         </nav>
     </header>
-
     <main>
+        <!--Method 5 Morphing Blob-->
+        <div class="container">
+        <h1 style="text-align: center; margin: 40px 0; font-size: 2.5rem;">Professional Photo Integration Methods</h1>
+   
+         <div class="method-section">
+            <div class="blob-container">
+                <img src="img.jpg" 
+                     alt="Morphing Photo" class="blob-photo">
+            </div>
+            
+            <div class="instruction">
+             
+            </div>
+        </div>
         <section id="home" class="hero">
             <h1>Tom West</h1>
             <p>Cybersecurity Professional & Home Lab Enthusiast</p>
@@ -207,6 +219,30 @@
                 }
             });
         });
+
+//Photo Effect
+ /*
+         // Example of how to dynamically change photo /*
+        function changePhoto(element, newSrc) {
+            element.style.opacity = '0';
+            setTimeout(() => {
+                element.src = newSrc;
+                element.style.opacity = '1';
+            }, 300);
+        }
+
+        // Add subtle parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const photos = document.querySelectorAll('img');
+            photos.forEach(photo => {
+                const rate = scrolled * -0.1;
+                photo.style.transform = `translateY(${rate}px)`;
+            });
+        });
+    >
+
+ */
 
         // Scroll animations
         const observerOptions = {
