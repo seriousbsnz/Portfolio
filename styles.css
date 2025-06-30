@@ -375,7 +375,9 @@
             margin: 0 auto;
             position: relative;
             display: flex;
-            overflow: hidden;;
+            overflow: hidden;
+            aspect-ratio: 35 / 39;
+            /* Ensures consistent aspect ratio across browsers */
         }
 
         .blob-photo {
@@ -386,7 +388,10 @@
             transition: all 2s ease-in-out;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
             animation: blob-morph 8s ease-in-out infinite;
-            display:block;
+            display: block;
+            min-width: 0;
+            min-height: 0;
+            /* Prevents stretching in flex containers */
         }
 
         @keyframes blob-morph {
